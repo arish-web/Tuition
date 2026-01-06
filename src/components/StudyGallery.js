@@ -5,23 +5,6 @@ export default function StudyGallery() {
         Our Learning Environment
       </h2>
 
-      {/* <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
-        <img
-          src="https://images.unsplash.com/photo-1513258496099-48168024aec0"
-          alt="Students studying"
-          className="rounded shadow"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
-          alt="Books"
-          className="rounded shadow"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b"
-          alt="Classroom"
-          className="rounded shadow"
-        />
-      </div> */}
       <div className="max-w-6xl mx-auto px-6 grid gap-6 md:grid-cols-3">
         {[
           "https://images.unsplash.com/photo-1513258496099-48168024aec0",
@@ -33,12 +16,17 @@ export default function StudyGallery() {
         ].map((src, i) => (
           <div
             key={i}
-            className="h-56 w-full overflow-hidden rounded-lg shadow"
+            className="group h-56 w-full overflow-hidden rounded-lg
+                       shadow-sm hover:shadow-xl
+                       transition-all duration-300
+                       hover:-translate-y-1 cursor-pointer"
           >
             <img
               src={src}
               alt="Learning environment"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover
+                         transition-transform duration-300
+                         group-hover:scale-110"
             />
           </div>
         ))}
