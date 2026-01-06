@@ -46,10 +46,6 @@ const categories = [
     title: "LKG",
     img: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=900&q=80",
   },
-//   {
-//     title: "UKG",
-//     img: "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=900&q=80",
-//   },
   {
     title: "UKG",
     img: "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=900&q=80",
