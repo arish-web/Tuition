@@ -1,41 +1,4 @@
 export default function ExploreCategories() {
-//  const categories = [
-//   {
-//     title: "Nursery",
-//     img: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80",
-//   },
-//   {
-//     title: "LKG",
-//     img: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80",
-//   },
-//   {
-//     title: "UKG",
-//     img: "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=800&q=80",
-//   },
-//   {
-//     title: "Class I",
-//     img: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=800&q=80",
-//   },
-//   {
-//     title: "Class II",
-//     img: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=80",
-//   },
-//   {
-//     title: "Class III",
-//     img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80",
-//   },
-//   {
-//     title: "Class IV",
-//     img: "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80",
-//   },
-//   {
-//     title: "Class V",
-//     img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
-//   },
-// ];
-
-
-
 
 const categories = [
   {
