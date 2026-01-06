@@ -9,10 +9,10 @@ export default function LocationSection() {
         <div>
           <h3 className="font-semibold text-lg mb-2">Bright Tuition Center</h3>
           <p className="text-gray-600 mb-2">
-            No. 12, Main Road,<br />
-            Your Area, Your City
+            No. 2, block-2, EGB swaroobam<br />
+            Matha Kovil Street, Chennai
           </p>
-          <p className="text-gray-600 mb-2">📞 +91 98765 43210</p>
+          <p className="text-gray-600 mb-2">📞 +91 8012011705</p>
           <p className="text-gray-600">🕘 Mon – Sat : 4 PM – 8 PM</p>
         </div>
 

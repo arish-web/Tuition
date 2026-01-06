@@ -27,6 +27,9 @@ export default function StudyGallery() {
           "https://images.unsplash.com/photo-1513258496099-48168024aec0",
           "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f",
           "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
+          "https://images.unsplash.com/photo-1529070538774-1843cb3265df",
+          "https://images.unsplash.com/photo-1509062522246-3755977927d7",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
         ].map((src, i) => (
           <div
             key={i}

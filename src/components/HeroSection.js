@@ -1,20 +1,3 @@
-// export default function HeroSection() {
-//   return (
-//     <section className="bg-gradient-to-r from-blue-600 to-blue-500 text-white py-24 text-center">
-//       <h1 className="text-4xl md:text-5xl font-bold mb-4">
-//         Building Strong Academic Foundations
-//       </h1>
-//       <p className="max-w-2xl mx-auto mb-6">
-//         Personal attention, daily homework, and expert guidance.
-//       </p>
-//       <button className="bg-green-500 px-8 py-3 rounded font-semibold">
-//         Enquire Admission
-//       </button>
-//     </section>
-//   );
-// }
-
-
 export default function HeroSection() {
   return (
     <section className="bg-gradient-to-b from-blue-600 to-blue-500 text-white">
