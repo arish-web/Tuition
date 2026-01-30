@@ -1,6 +1,6 @@
 export default function LocationSection() {
   return (
-    <section  id="about" className="py-16 bg-gray-50">
+    <section id="about" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">
           Visit Our Tuition Center
@@ -10,11 +10,10 @@ export default function LocationSection() {
           {/* LEFT: DETAILS */}
           <div className="space-y-6">
             <div>
-              <h3 className="font-semibold text-xl mb-2">
-                Bright Tuition Center
-              </h3>
+              <h3 className="font-semibold text-xl mb-2">Wiss Learn Space</h3>
               <p className="text-gray-600">
-                A safe and focused learning space for Nursery to Class V students.
+                A safe and focused learning space for Nursery to Class V
+                students.
               </p>
             </div>
 
@@ -23,16 +22,19 @@ export default function LocationSection() {
               <div className="bg-white p-4 rounded-lg border shadow-sm">
                 <p className="font-medium mb-1">📍 Address</p>
                 <p className="text-gray-600 text-sm">
-                  No. 2, Block-2, EGB Swaroobam<br />
-                  Matha Kovil Street,<br />
-                  Chennai
+                  38-3/11 Kailashnathar Koil Street,
+                  <br />
+                  Big Natham,
+                  <br />
+                  Chengalpattu - 603 002
                 </p>
               </div>
 
               <div className="bg-white p-4 rounded-lg border shadow-sm">
                 <p className="font-medium mb-1">📞 Contact</p>
                 <p className="text-gray-600 text-sm">
-                  +91 80120 11705<br />
+                  91 8925 2464 93
+                  <br />
                   Call or WhatsApp
                 </p>
               </div>
@@ -40,7 +42,8 @@ export default function LocationSection() {
               <div className="bg-white p-4 rounded-lg border shadow-sm">
                 <p className="font-medium mb-1">🕒 Timings</p>
                 <p className="text-gray-600 text-sm">
-                  Monday – Saturday<br />
+                  Monday – Saturday
+                  <br />
                   4:00 PM – 8:00 PM
                 </p>
               </div>
@@ -48,8 +51,9 @@ export default function LocationSection() {
               <div className="bg-white p-4 rounded-lg border shadow-sm">
                 <p className="font-medium mb-1">🚌 Nearby Landmark</p>
                 <p className="text-gray-600 text-sm">
-                  Near Matha Kovil<br />
-                  Easy access from main road
+                  Kailashnathar Koil Street,
+                  <br />
+                  Big Natham,
                 </p>
               </div>
             </div>
@@ -63,8 +67,14 @@ export default function LocationSection() {
                 Enquire Now
               </a>
 
-              <a
+              {/* <a
                 href="https://www.google.com/maps?q=No.2+Block-2+EGB+Swaroobam+Matha+Kovil+Street+Chennai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border border-blue-600 text-blue-600 px-6 py-3 rounded font-medium hover:bg-blue-50 transition"
+              > */}
+              <a
+                href="https://www.google.com/maps?q=38-3/11+Kailashnathar+Koil+Street,+Big+Natham,+Chengalpattu+603002"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block border border-blue-600 text-blue-600 px-6 py-3 rounded font-medium hover:bg-blue-50 transition"
@@ -76,16 +86,21 @@ export default function LocationSection() {
 
           {/* RIGHT: MAP */}
           <div className="w-full h-full">
-            <iframe
+            {/* <iframe
               title="Location Map"
               src="https://www.google.com/maps?q=No.2+Block-2+EGB+Swaroobam+Matha+Kovil+Street+Chennai&output=embed"
               className="w-full h-[360px] rounded-lg border shadow-sm"
               loading="lazy"
-            />
+            /> */}
+            <iframe
+              title="Location Map"
+              src="https://www.google.com/maps?q=38-3/11+Kailashnathar+Koil+Street,+Big+Natham,+Chengalpattu+603002&output=embed"
+              className="w-full h-[360px] rounded-lg border shadow-sm"
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
     </section>
   );
 }
-
