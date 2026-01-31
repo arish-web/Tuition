@@ -1,30 +1,49 @@
 export default function SubjectsSection() {
+  // const subjects = [
+  //   {
+  //     name: "Mathematics (Grade 1 – 10)",
+  //     info: "Strong foundation in arithmetic, algebra, geometry, and problem solving.",
+  //   },
+  //   {
+  //     name: "Science (Physics, Chemistry, Biology)",
+  //     info: "Concept-based learning with practical examples and experiments.",
+  //   },
+  //   {
+  //     name: "English Grammar & Writing",
+  //     info: "Focus on grammar, vocabulary, comprehension, and writing skills.",
+  //   },
+  //   {
+  //     name: "Exam Preparation",
+  //     info: "Targeted coaching for school exams with revision and mock tests.",
+  //   },
+  //   {
+  //     name: "Homework Guidance",
+  //     info: "Daily homework support with explanation and corrections.",
+  //   },
+  //   {
+  //     name: "Concept Revision",
+  //     info: "Regular revision sessions to strengthen weak areas.",
+  //   },
+  // ];
   const subjects = [
-    {
-      name: "Mathematics (Grade 1 – 10)",
-      info: "Strong foundation in arithmetic, algebra, geometry, and problem solving.",
-    },
-    {
-      name: "Science (Physics, Chemistry, Biology)",
-      info: "Concept-based learning with practical examples and experiments.",
-    },
-    {
-      name: "English Grammar & Writing",
-      info: "Focus on grammar, vocabulary, comprehension, and writing skills.",
-    },
-    {
-      name: "Exam Preparation",
-      info: "Targeted coaching for school exams with revision and mock tests.",
-    },
-    {
-      name: "Homework Guidance",
-      info: "Daily homework support with explanation and corrections.",
-    },
-    {
-      name: "Concept Revision",
-      info: "Regular revision sessions to strengthen weak areas.",
-    },
-  ];
+  {
+    name: "Phonics",
+    info: "Sound-based learning to improve pronunciation, reading fluency, and word recognition.",
+  },
+  {
+    name: "Grammar",
+    info: "Clear understanding of sentence structure, tenses, parts of speech, and usage.",
+  },
+  {
+    name: "Creative Writing",
+    info: "Developing imagination, storytelling skills, and structured writing techniques.",
+  },
+  {
+    name: "Handwriting",
+    info: "Improving letter formation, spacing, alignment, and overall writing clarity.",
+  },
+];
+
 
   return (
     <section className="bg-blue-50 py-16">
