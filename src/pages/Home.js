@@ -9,6 +9,7 @@ import StudyGallery from "../components/StudyGallery";
 import TestimonialsSection from "../components/TestimonialsSection";
 import EnquiryForm from "../components/EnquiryForm";
 import LocationSection from "../components/LocationSection";
+import MultiSensoryLearning from "../components/MultiSensoryLearning";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       {/* Classes / tuition types (THIS IS YOUR IMAGE SECTION) */}
       <SubjectsSection /> {/* What subjects you teach */}
       <TeachingMethodSection /> {/* How you teach */}
+      <MultiSensoryLearning /> {/* Multi-sensory approach */}
       <ResultsSection /> {/* Proof (results) */}
       <StudyGallery /> {/* Environment & photos */}
       {/* <StaffSection />                Teachers = credibility */}

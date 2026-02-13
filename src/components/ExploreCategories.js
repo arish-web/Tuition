@@ -1,69 +1,88 @@
 export default function ExploreCategories() {
-
-const categories = [
-  {
-    title: "Nursery",
-    img: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "LKG",
-    img: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "UKG",
-    img: "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "Class I",
-    img: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "Class II",
-    img: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "Class III",
-    img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "Class IV",
-    img: "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "Class V",
-    img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80",
-  },
-];
-
-
+  const categories = [
+    {
+      title: "Phonics",
+      tag: "Linguistics",
+      img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
+      desc: "Mastering sounds and letters for fluent, confident reading.",
+    },
+    {
+      title: "Grammar",
+      tag: "Structure",
+      img: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80",
+      desc: "Building sophisticated foundations in language rules and syntax.",
+    },
+    {
+      title: "Creative Writing",
+      tag: "Expression",
+      img: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+      desc: "Unleashing imagination through the art of narrative storytelling.",
+    },
+    {
+      title: "Hand Writing",
+      tag: "Artistry",
+      img: "https://images.unsplash.com/photo-1516533075015-a3838414c3ca?auto=format&fit=crop&w=1200&q=80",
+      desc: "Refining elegance and precision through disciplined calligraphy.",
+    },
+  ];
 
   return (
-    <section className="bg-blue-100 py-16">
+    <section id="categories" className="bg-white py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">
-          Explore Categories
-        </h2>
+        {/* Elegant Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
+          <div className="max-w-2xl">
+            <h2 className="text-sm font-bold tracking-[0.3em] text-blue-600 uppercase mb-4">
+              Our Specializations
+            </h2>
+            <p className="text-4xl md:text-6xl font-light text-slate-900 leading-tight">
+              Curated <span className="font-serif italic text-slate-500">Learning</span> Pathways
+            </p>
+          </div>
+          <p className="text-slate-500 max-w-sm text-lg font-light leading-relaxed border-l border-slate-200 pl-6">
+            Focused programs designed to transform fundamental skills into academic mastery.
+          </p>
+        </div>
 
-        {/* 4 + 4 layout guaranteed */}
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {categories.map((c) => (
+        {/* Categories Grid */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {categories.map((c, i) => (
             <div
               key={c.title}
-              className="group bg-white rounded-lg overflow-hidden
-                         shadow-sm hover:shadow-xl
-                         transition-all duration-300
-                         hover:-translate-y-1 cursor-pointer"
+              className="group relative flex flex-col h-[500px] overflow-hidden rounded-3xl bg-slate-100 transition-all duration-700"
             >
-              <img
-                src={c.img}
-                alt={c.title}
-                className="h-40 w-full object-cover
-                           transition-transform duration-300
-                           group-hover:scale-105"
-              />
-              <p className="text-center font-medium py-3">
-                {c.title}
-              </p>
+              {/* Background Image with Overlay */}
+              <div className="absolute inset-0 z-0">
+                <img
+                  src={c.img}
+                  alt={c.title}
+                  className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-slate-900/20 via-transparent to-slate-950/90 transition-opacity duration-500 group-hover:opacity-80" />
+              </div>
+
+              {/* Top Tag - Glassmorphism */}
+              <div className="relative z-10 p-8">
+                <span className="inline-block px-3 py-1 text-[10px] font-bold tracking-widest text-white uppercase border border-white/30 backdrop-blur-md rounded-full bg-white/10">
+                  {c.tag}
+                </span>
+              </div>
+
+              {/* Bottom Content */}
+              <div className="relative z-10 mt-auto p-8 transform transition-transform duration-500 group-hover:-translate-y-2">
+                <h3 className="text-2xl font-bold text-white mb-3">
+                  {c.title}
+                </h3>
+                <p className="text-slate-300 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 max-h-0 group-hover:max-h-24 overflow-hidden">
+                  {c.desc}
+                </p>
+
+                {/* Modern Link Button */}
+                <div className="mt-6 flex items-center text-white text-xs font-bold tracking-widest uppercase gap-2 group-hover:text-blue-400 transition-colors">
+                  <span className="w-8 h-[1px] bg-white group-hover:bg-blue-400 transition-all duration-500 group-hover:w-12"></span>
+                  View Program
+                </div>
+              </div>
             </div>
           ))}
         </div>
@@ -71,7 +90,3 @@ const categories = [
     </section>
   );
 }
-
-
-
-
