@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="max-w-md">
             <h3 className="text-2xl font-bold text-white mb-2">Wiss Learn Space</h3>
             <p className="text-sm text-slate-500 italic">
-              Empowering young minds from Nursery to Class V with personalized care.
+              Wiss Learn Space is a child-focused centre building strong foundations in literacy and essential skills. Through phonics, multi-sensory learning, and small groups, we nurture confident, independent learners.
             </p>
           </div>
           <div className="flex gap-4">
