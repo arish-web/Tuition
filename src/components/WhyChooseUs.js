@@ -31,34 +31,28 @@ const Icons = {
 export default function WhyChooseUs() {
   const points = [
     {
-      title: "Small Batch",
-      subtitle: "Focused Learning",
-      desc: "Restricted student-to-teacher ratios ensuring every voice is heard.",
-      icon: <Icons.Batch />,
-    },
-    {
-      title: "Daily Review",
-      subtitle: "Mastery Loop",
-      desc: "Rigorous tracking and constructive feedback loops to eliminate doubt.",
-      icon: <Icons.Review />,
-    },
-    {
-      title: "Elite Faculty",
-      subtitle: "Expert Mentors",
-      desc: "Seasoned educators with profound subject expertise and passion.",
+      title: "Child-Centred",
+      subtitle: "Personalised Teaching",
+      desc: "👶✨ Tailored education for every child to ensure individual growth and mastery.",
       icon: <Icons.Faculty />,
     },
     {
-      title: "Holistic Growth",
-      subtitle: "Beyond Grades",
-      desc: "Architecting futures through a disciplined academic ecosystem.",
+      title: "Small Groups",
+      subtitle: "Focused Attention",
+      desc: "👨‍👩‍👧‍👦 Restricted student-to-teacher ratios ensuring better interaction and engagement.",
+      icon: <Icons.Batch />,
+    },
+    {
+      title: "Structured Phonics",
+      subtitle: "Strong Foundations",
+      desc: "🔤📖 Building robust reading and writing skills through systematic methodology.",
       icon: <Icons.Growth />,
     },
     {
-      title: "Parent Synergy",
-      subtitle: "Real-time Insights",
-      desc: "Transparent tracking and constant communication on student progress.",
-      icon: <Icons.Batch />,
+      title: "Multi-Sensory",
+      subtitle: "Engaging Activities",
+      desc: "🧠🎨 Learning through actions, songs, flashcards, and hands-on storytelling.",
+      icon: <Icons.Review />,
     },
   ];
 
@@ -101,20 +95,18 @@ export default function WhyChooseUs() {
                 <div
                   className={`
                   relative p-14 rounded-[3.5rem] border transition-all duration-700
-                  ${
-                    isActive
+                  ${isActive
                       ? "bg-slate-900 border-slate-700 scale-100 opacity-100 shadow-[0_40px_120px_-20px_rgba(0,0,0,0.6)]"
                       : "bg-transparent border-transparent scale-90 opacity-30"
-                  }
+                    }
                 `}
                 >
                   {/* Icon */}
                   <div
-                    className={`w-16 h-16 rounded-3xl flex items-center justify-center mb-10 transition-all duration-700 ${
-                      isActive
+                    className={`w-16 h-16 rounded-3xl flex items-center justify-center mb-10 transition-all duration-700 ${isActive
                         ? "bg-blue-600 text-white"
                         : "bg-slate-800 text-slate-500"
-                    }`}
+                      }`}
                   >
                     {p.icon}
                   </div>
@@ -133,9 +125,8 @@ export default function WhyChooseUs() {
 
                   {/* Number */}
                   <div
-                    className={`absolute top-12 right-12 text-7xl font-black transition-opacity duration-700 ${
-                      isActive ? "opacity-10 text-slate-100" : "opacity-0"
-                    }`}
+                    className={`absolute top-12 right-12 text-7xl font-black transition-opacity duration-700 ${isActive ? "opacity-10 text-slate-100" : "opacity-0"
+                      }`}
                   >
                     0{i + 1}
                   </div>

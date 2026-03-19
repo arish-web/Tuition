@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -14,10 +15,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Why Us", href: "#why" },
-    { name: "Subjects", href: "#subjects" },
-    { name: "Location", href: "#location" },
+    { name: "Home", href: "/" },
+    { name: "Programs", href: "/#categories" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ];
 
   // Dynamic Class Logic
@@ -42,26 +43,26 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
 
         {/* Logo */}
-        <div className="flex items-center gap-2 group cursor-pointer">
+        <Link to="/" className="flex items-center gap-2 group cursor-pointer">
           <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-500 shadow-lg ${scrolled ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'}`}>
             <span className="font-black text-xl">W</span>
           </div>
           <h1 className={`font-bold text-xl tracking-tight transition-colors duration-500 ${textColor}`}>
             Wiss <span className={scrolled ? "text-blue-600" : "text-white/80"}>Learn</span> Space
           </h1>
-        </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-10">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className={`text-sm font-bold transition-all duration-500 relative group ${textColor} hover:opacity-100 opacity-90`}
             >
               {link.name}
               <span className={`absolute -bottom-1 left-0 h-0.5 transition-all duration-300 w-0 group-hover:w-full ${scrolled ? 'bg-blue-600' : 'bg-white'}`}></span>
-            </a>
+            </Link>
           ))}
 
           <a
@@ -90,14 +91,14 @@ export default function Navbar() {
         }`}>
         <div className="px-8 py-10 space-y-6">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               onClick={() => setOpen(false)}
               className="block text-xl font-bold text-slate-900 hover:text-blue-600 transition-colors"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
           <a
             href="#enquiry"

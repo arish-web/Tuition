@@ -5,22 +5,22 @@ export default function MultiSensoryLearning() {
         {
             title: "Actions and Songs",
             label: "Rhythmic Auditory",
-            desc: "Utilizing melody and movement to anchor phonological awareness and linguistic patterns.",
+            desc: "🎶 Engaging actions and songs to anchor phonological awareness and linguistic patterns.",
         },
         {
             title: "Flashcards and Visual Aids",
             label: "Visual Stimuli",
-            desc: "High-fidelity visual tools and conceptual mapping designed to accelerate pattern recognition.",
+            desc: "🃏 High-fidelity visual tools designed to accelerate pattern recognition and retention.",
         },
         {
             title: "Hands-on Activities",
             label: "Tactile Exploration",
-            desc: "Engaging the 'learning-by-doing' philosophy through physical manipulatives and sensory-rich experiments.",
+            desc: "✋ Engaging the 'learning-by-doing' philosophy through physical manipulatives and sensory-rich experiments.",
         },
         {
             title: "Games and Storytelling",
             label: "Narrative Logic",
-            desc: "Immersive storytelling and gamified logic that bridge the gap between abstract theory and real-world application.",
+            desc: "🎲 Immersive storytelling and gamified logic that bridge the gap between theory and application.",
         },
     ];
 

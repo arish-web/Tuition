@@ -1,28 +1,34 @@
+import { Link } from "react-router-dom";
+
 export default function ExploreCategories() {
   const categories = [
     {
       title: "Phonics",
       tag: "Linguistics",
-      img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
+      img: "/phonics_illustration.jpg",
       desc: "Mastering sounds and letters for fluent, confident reading.",
+      link: "/phonics",
     },
     {
       title: "Grammar",
       tag: "Structure",
-      img: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80",
+      img: "/grammar_illustration.png",
       desc: "Building sophisticated foundations in language rules and syntax.",
+      link: "/grammar",
     },
     {
       title: "Creative Writing",
       tag: "Expression",
-      img: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+      img: "/creative_writing_illustration.jpg",
       desc: "Unleashing imagination through the art of narrative storytelling.",
+      link: "/creative-writing",
     },
     {
       title: "Hand Writing",
       tag: "Artistry",
-      img: "https://images.unsplash.com/photo-1516533075015-a3838414c3ca?auto=format&fit=crop&w=1200&q=80",
+      img: "/handwriting_illustration.jpg",
       desc: "Refining elegance and precision through disciplined calligraphy.",
+      link: "/handwriting",
     },
   ];
 
@@ -47,43 +53,41 @@ export default function ExploreCategories() {
         {/* Categories Grid */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((c, i) => (
-            <div
+            <Link
               key={c.title}
-              className="group relative flex flex-col h-[500px] overflow-hidden rounded-3xl bg-slate-100 transition-all duration-700"
+              to={c.link}
+              className="group relative flex flex-col h-[500px] overflow-hidden rounded-3xl bg-white border border-slate-100 transition-all duration-700 hover:shadow-2xl hover:border-blue-100"
             >
-              {/* Background Image with Overlay */}
-              <div className="absolute inset-0 z-0">
+              {/* Illustration Area */}
+              <div className="relative h-3/5 overflow-hidden bg-white p-4">
                 <img
                   src={c.img}
                   alt={c.title}
-                  className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0"
+                  className="h-full w-full object-contain transition-transform duration-1000 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-slate-900/20 via-transparent to-slate-950/90 transition-opacity duration-500 group-hover:opacity-80" />
               </div>
 
-              {/* Top Tag - Glassmorphism */}
-              <div className="relative z-10 p-8">
-                <span className="inline-block px-3 py-1 text-[10px] font-bold tracking-widest text-white uppercase border border-white/30 backdrop-blur-md rounded-full bg-white/10">
+              {/* Content Area */}
+              <div className="relative z-10 flex-1 flex flex-col p-8 bg-slate-50 transition-colors duration-500 group-hover:bg-white">
+                {/* Top Tag */}
+                <span className="inline-block self-start px-3 py-1 text-[10px] font-bold tracking-widest text-blue-600 uppercase border border-blue-100 rounded-full bg-blue-50/50 mb-4">
                   {c.tag}
                 </span>
-              </div>
 
-              {/* Bottom Content */}
-              <div className="relative z-10 mt-auto p-8 transform transition-transform duration-500 group-hover:-translate-y-2">
-                <h3 className="text-2xl font-bold text-white mb-3">
+                <h3 className="text-2xl font-bold text-slate-900 mb-3">
                   {c.title}
                 </h3>
-                <p className="text-slate-300 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 max-h-0 group-hover:max-h-24 overflow-hidden">
+                <p className="text-slate-500 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 max-h-0 group-hover:max-h-24 overflow-hidden">
                   {c.desc}
                 </p>
 
                 {/* Modern Link Button */}
-                <div className="mt-6 flex items-center text-white text-xs font-bold tracking-widest uppercase gap-2 group-hover:text-blue-400 transition-colors">
-                  <span className="w-8 h-[1px] bg-white group-hover:bg-blue-400 transition-all duration-500 group-hover:w-12"></span>
+                <div className="mt-auto flex items-center text-blue-600 text-xs font-bold tracking-widest uppercase gap-2 transition-colors">
+                  <span className="w-8 h-[1px] bg-blue-600 transition-all duration-500 group-hover:w-12"></span>
                   View Program
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
